@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useWeb3 } from '../context/Web3Context';
+import './CardGrid.css'; // Make sure to create and update this CSS file
 
 function CardGrid() {
     const { cards, loading } = useWeb3();
@@ -15,7 +16,16 @@ function CardGrid() {
     }, []);
 
     if (loading) {
-        return <img src="loading-image-url.jpg" alt="Loading..." style={{ width: '100%' }} />;
+        return (
+            <div className="loading-screen">
+                <div className="loading-animation">
+                    <div className="loading-bar">
+                        <div className="loading-fill"></div>
+                    </div>
+                    <p>Loading OddPepes Deck Guide...</p>
+                </div>
+            </div>
+        );
     }
 
     return (

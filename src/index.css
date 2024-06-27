@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Importing the Press Start 2P font */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Press Start 2P', cursive; /* Applying the pixelated font */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Press Start 2P', Menlo, Monaco, Consolas, 'Courier New', monospace; /* Applying the pixelated font to code elements */
+  background-color: #1e1e1e; /* Dark background for code elements */
+  color: #ffd700; /* Gold color for code text */
+  padding: 5px;
+  border-radius: 5px;
 }

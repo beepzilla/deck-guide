@@ -1,0 +1,43 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #121212; /* Dark background */
+    color: #ffd700; /* Gold color for text */
+    font-family: 'Press Start 2P', cursive; /* Fancy pixelated font */
+  }
+  
+  .loading-animation {
+    text-align: center;
+  }
+  
+  .loading-bar {
+    width: 80%;
+    height: 20px;
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    background-color: #1e1e1e; /* Dark background inside the bar */
+  }
+  
+  .loading-fill {
+    width: 0;
+    height: 100%;
+    background-color: #ffd700; /* Gold color for the fill */
+    animation: loading 3s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
